@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Offer Alert -->
+    <header class="offer-alert">
+        <p>
+            Sign Up and <strong>GET 20% OFF</strong> for your first Order
+            <i id="offer-close" style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i>
+        </p>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+
+        <ul class="navbar__items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#new-arrival">New Arrival</a></li>
+            <li><a href="#most-wanted">Most Wanted</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="navbar__menu">
+            <i id="side-navbar__menu" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--Side Navbar-->
+    <div class="side-navbar">
+        <p><i class="fa-solid fa-xmark" onclick="closeSideNavbar()"></i></p>
+
+        <ul class="side-navbar__items">
+            <li><a href="#home" onclick="closeSideNavbar()">Home</a></li>
+            <li><a href="#new-arrival" onclick="closeSideNavbar()">New Arrival</a></li>
+            <li><a href="#most-wanted" onclick="closeSideNavbar()">Most Wanted</a></li>
+            <li><a href="./Collections/collection.html">Collections</a></li>
+            <li><a href="./Contact/contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <main class="container" id="home">
+        <!--Slider-->
+        <section class="slider">
+            <div class="slider-left">
+                <i id="slider-left-button" class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+            </div>
+
+            <div class="slider-content">
+                <h1>Level up your style with our</h1>
+                <h4>Summer Collections</h4>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+
+            <div class="slider-image-container">
+                <img class="slider-image" src="images/banner/Untitled design (3).png" alt="Image">
+                <img class="slider-image" src="images/banner/Untitled design (5).png" alt="Trendy Image">
+                <img class="slider-image" src="images/banner/Untitled design (3).png" alt="Trendy Image">
+            </div>
+
+            <div class="slider-right">
+                <i id="slider-right-button" class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+            </div>
+        </section>
+
+        <!--Brands-->
+        <section class="brand">
+            <h2>Brands</h2>
+            <div class="brands">
+                <div class="brands-item">
+                    <img class="brands-icon" src="images/brands/images 1.png" alt="">
+                    <p>Puma</p>
+                </div>
+
+                <div class="brands-item">
+                    <img class="brands-icon" src="images/brands/images 2.png" alt="">
+                    <p>Adidas</p>
+                </div>
+
+                <div class="brands-item">
+                    <img class="brands-icon" src="images/brands/images 3.png" alt="">
+                    <p>Simple</p>
+                </div>
+
+                <div class="brands-item">
+                    <img class="brands-icon" src="images/brands/leaf img.jpeg" alt="">
+                    <p>Leaves</p>
+                </div>
+
+                <div class="brands-item">
+                    <img class="brands-icon" src="images/brands/behance img.png" alt="">
+                    <p>Behance</p>
+                </div>
+
+                <div class="brands-item">
+                    <img class="brands-icon" src="images/brands/twitch img.png" alt="">
+                    <p>Twitch</p>
+                </div>
+
+                <div class="brands-item">
+                    <img class="brands-icon" src="images/brands/leaf img.jpeg" alt="">
+                    <p>Leaves</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="service">
+            <div class="servives-container-1">
+                <div>
+                    <h2>We Provide Best</h2>
+                    <h2>Customer Experiences</h2>
+                </div>
+
+                <div>
+                    <p>|| We ensure that our customer have the best shopping experience</p>
+                </div>
+            </div>
+
+            <div class="servives-container-2">
+                <div>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <h4>Original Products</h4>
+                    <p>"We guarantee 100% authentic and original products sourced directly from trusted manufacturers. Shop confidently knowing you are getting only the best quality."</p>
+                </div>
+
+                <div>
+                    <i class="fa-regular fa-face-smile"></i>
+                    <h4>Satisfaction Guarantee</h4>
+                    <p>"Your happiness is our priority. If you're not completely satisfied with your purchase, we offer easy returns and dedicated customer support to make it right."</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-broom"></i>
+                    <h4>New Arrival Everyday</h4>
+                    <p>"Stay ahead of trends with our daily new arrivals! Fresh styles, latest tech, and more — updated every single day so there's always something new for you."</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h4>Fast & Free Shipping</h4>
+                    <p>"Enjoy fast and free delivery on all your orders. We work with top couriers to ensure your products reach you quickly and safely, at no extra cost!"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrival -->
+        <section id="new-arrival">
+            <h2>New Arrivals</h2>
+            <div class="new-arrivals">
+                <div class="new-arrival-container">
+                    <img src="images/shirt/shirt1.jpeg" alt="new collections">
+                    <div class="overlay"></div>
+                    <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+
+                <div class="new-arrival-container">
+                    <img src="images/shirt/shirt3.jpg" alt="new collections">
+                    <div class="overlay"></div>
+                    <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+
+                <div class="new-arrival-container">
+                    <img src="images/shirt/shirt4.jpeg" alt="new collections">
+                    <div class="overlay"></div>
+                    <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+
+                <div class="new-arrival-container">
+                    <img src="images/shirt/shirt5.jpeg" alt="new collections">
+                    <div class="overlay"></div>
+                    <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Most Wanted -->
+        <section id="most-wanted">
+            <h2>Most Wanted</h2>
+
+            <div class="most-wanted">
+                <div class="most-wanted-container">
+                    <img src="images/shirt/m7.jpeg" alt="">
+                    <p class="sale-overlay">sale</p>
+                    <div class="like-button">
+                        <span class="heart-empty"><i class="fa-regular fa-heart"></i></span>
+                        <span class="heart-fill"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="most-wanted-container">
+                    <img src="images/shirt/m2.jpg" alt="">
+                    <p class="sale-overlay">sale</p>
+                    <div class="like-button">
+                        <span class="heart-empty"><i class="fa-regular fa-heart"></i></span>
+                        <span class="heart-fill"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="most-wanted-container">
+                    <img src="images/shirt/m3.jpeg" alt="">
+                    <p class="sale-overlay">sale</p>
+                    <div class="like-button">
+                        <span class="heart-empty"><i class="fa-regular fa-heart"></i></span>
+                        <span class="heart-fill"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="most-wanted-container">
+                    <img src="images/shirt/m5.jpg" alt="">
+                    <p class="sale-overlay">sale</p>
+                    <div class="like-button">
+                        <span class="heart-empty"><i class="fa-regular fa-heart"></i></span>
+                        <span class="heart-fill"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="most-wanted-container">
+                    <img src="images/shirt/m8.jpg" alt="">
+                    <p class="sale-overlay">sale</p>
+                    <div class="like-button">
+                        <span class="heart-empty"><i class="fa-regular fa-heart"></i></span>
+                        <span class="heart-fill"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="most-wanted-container">
+                    <img src="images/shirt/m7.jpeg" alt="">
+                    <p class="sale-overlay">sale</p>
+                    <div class="like-button">
+                        <span class="heart-empty"><i class="fa-regular fa-heart"></i></span>
+                        <span class="heart-fill"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="most-wanted-container">
+                    <img src="images/shirt/m3.jpeg" alt="">
+                    <p class="sale-overlay">sale</p>
+                    <div class="like-button">
+                        <span class="heart-empty"><i class="fa-regular fa-heart"></i></span>
+                        <span class="heart-fill"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="most-wanted-container">
+                    <img src="images/shirt/m2.jpg" alt="">
+                    <p class="sale-overlay">sale</p>
+                    <div class="like-button">
+                        <span class="heart-empty"><i class="fa-regular fa-heart"></i></span>
+                        <span class="heart-fill"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limited Offer -->
+        <section class="limited-offer">
+            <div class="limited-offer-img">
+                <img src="images/shirt/offer.jpeg" alt="Offer Image">
+            </div>
+            <div class="limited-offer-text">
+                <h2>Limited Offer</h2>
+                <h4>20% OFF on this for the first 50 Customers</h4>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+        </section>
+
+        <!-- News letter -->
+        <section class="news">
+            <h2>Join our News Letter</h2>
+            <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+            <input class="search">
+            <button> Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h2 class="headingText">Nostra</h2>
+        <p>"At Nostra, we bring you quality, innovation, and trust — delivering the best products and experiences right to your doorstep. Join us on our journey to redefine excellence."</p>
+        <div class="footer-icon-container">
+            <i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+            <i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+            <i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i>
+        </div>
+        <p>@ 2025 Nostra.com</p>
+    </footer>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
